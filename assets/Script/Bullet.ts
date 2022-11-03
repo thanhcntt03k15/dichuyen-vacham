@@ -27,7 +27,7 @@ export class Bullet extends Component {
     }
     OnTriggerEnter(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null){
         console.log("OnTrigger");
-        this.OffDesTroy();
+        //this.OffDesTroy();
         console.log("Log");
     }
     OffDesTroy()

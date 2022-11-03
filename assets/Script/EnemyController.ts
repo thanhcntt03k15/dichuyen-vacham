@@ -13,12 +13,12 @@ export class EnemyController extends Component {
     }
     OnTriggerEnter(selfCollider: Collider2D, otherCollider: Collider2D, contact: IPhysics2DContact | null){
         console.log("OnTrigger");
-        otherCollider.node.active = false;
+        this.OffDesTroy(otherCollider);
         console.log("Log");
     }
-    OffDesTroy()
+    OffDesTroy(collider : Collider2D)
     {
-        this.node.destroy();
+        collider.node.destroy();
     }
 }
 
